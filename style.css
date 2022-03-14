@@ -1,0 +1,61 @@
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,400&display=swap");
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+    }
+    
+    #main_div {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    #inner_div {
+        width: 40vw;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 1px 2px black;
+    }
+    
+    label,
+    input {
+        cursor: pointer;
+    }
+    
+    #submit:hover {
+        font-weight: 600;
+    }
+    
+    #showScore {
+        background-color: #dfe6e9;
+        box-shadow: 1px 1px black;
+    }
+    
+    #showScore h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    #showScore .btn {
+        background-color: #007bff;
+        color: #fff;
+    }
+    
+    #showScore .btn:hover {
+        background-color: #00b894;
+        color: #fff;
+    }
+    
+    .scoreArea {
+        display: none;
+    }
+    
+    @media screen and (max-width: 900px) {
+        #main_div,
+        #inner_div {
+            width: 100%;
+            /* The width is 100%, when the viewport is 800px or smaller */
+        }
+    }
